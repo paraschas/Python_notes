@@ -4,6 +4,12 @@
 # Dimitrios Paraschas (paraschas@gmail.com)
 
 
+import sys
+
+
+sys.dont_write_bytecode = True
+
+
 def main():
     """
     main function
