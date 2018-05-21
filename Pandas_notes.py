@@ -7,18 +7,23 @@
 import pandas as pd
 
 
-def test_if_dataframe_is_empty():
-    empty_dataframe = pd.DataFrame()
+def check_if_dataframe_is_empty():
+    """
+    Check whether a dataframe is empty.
+    """
+    df = pd.DataFrame()
 
-    if empty_dataframe.empty:
-        print("The dataframe is empty.")
+    if df.empty:
+        print("The dataframe is empty:")
+        print()
+        print(df)
 
 
 def main():
     """
     main function
     """
-    test_if_dataframe_is_empty()
+    check_if_dataframe_is_empty()
 
 
 if __name__ == "__main__":
