@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Dimitrios Paraschas (paraschas@gmail.com)
+# William Dimitrios Paraschas (paraschas@gmail.com)
 
 
 def main():
