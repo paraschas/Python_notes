@@ -12,6 +12,7 @@ def time_it(verbose=True, show_arguments=False):
     """
     Decorator to use on a function to measure its execution time.
     """
+
     def time_it_decorator(function):
         @functools.wraps(function)
         def wrapper(*args, **kwargs):
@@ -25,11 +26,15 @@ def time_it(verbose=True, show_arguments=False):
             if verbose:
                 function_name = function.__name__
                 if show_arguments:
-                    print(f"{function_name}({args}, {kwargs}) run in {total_time} seconds")
+                    print(
+                        f"{function_name}({args}, {kwargs}) run in {total_time} seconds"
+                    )
                 else:
                     print(f"{function_name} run in {total_time} seconds")
             return result
+
         return wrapper
+
     return time_it_decorator
 
 
