@@ -4,6 +4,18 @@
 # William Dimitrios Paraschas (paraschas@gmail.com)
 
 
+"""
+docstring
+"""
+
+
+# standard library imports
+
+# third party imports
+
+# project imports
+
+
 def main():
     """
     main function
