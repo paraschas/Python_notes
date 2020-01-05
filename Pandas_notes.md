@@ -1,3 +1,12 @@
+# Pandas notes
+
+
+import
+```
+import pandas as pd
+```
+
+
 Check whether a dataframe is empty.
 ```
 df.empty
