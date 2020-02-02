@@ -27,10 +27,10 @@ def time_it(verbose=True, show_arguments=False):
                 function_name = function.__name__
                 if show_arguments:
                     print(
-                        f"{function_name}({args}, {kwargs}) run in {total_time} seconds"
+                        f"{function_name}({args}, {kwargs}) run in {total_time:.6f} seconds"
                     )
                 else:
-                    print(f"{function_name} run in {total_time} seconds")
+                    print(f"{function_name} run in {total_time:.6f} seconds")
             return result
 
         return wrapper
