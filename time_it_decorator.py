@@ -10,7 +10,7 @@ import time
 
 def time_it(verbose=True, show_arguments=False):
     """
-    Decorator to use on a function to measure its execution time.
+    Decorator to measure function running time.
     """
 
     def time_it_decorator(function):
