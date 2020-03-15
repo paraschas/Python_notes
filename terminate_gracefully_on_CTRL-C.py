@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
+# William Dimitrios Paraschas (paraschas@gmail.com)
+
+
 import signal
 import sys
 import time
