@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 # William Dimitrios Paraschas (paraschas@gmail.com)
 
 
@@ -39,11 +40,18 @@ def time_it(verbose=True, show_arguments=False):
 
 
 @time_it()
+def wait():
+    print("wait started")
+    delay = 1
+    time.sleep(delay)
+    print("wait finished")
+
+
 def main():
     """
     main function
     """
-    print("Hello World!")
+    wait()
 
 
 if __name__ == "__main__":
