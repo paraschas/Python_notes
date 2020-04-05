@@ -5,3 +5,5 @@
 *.pyc
 
 .ipynb_checkpoints/
+
+.python-version
