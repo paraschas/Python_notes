@@ -1,9 +1,12 @@
 # .gitignore
+
 # William Dimitrios Paraschas (paraschas@gmail.com)
+
 
 # Python byte code files
 *.pyc
 
-.ipynb_checkpoints/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
 
 .python-version
