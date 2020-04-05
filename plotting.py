@@ -34,9 +34,8 @@ def plot_linear_function():
 
     start = 0
     end = 10
-    num_points = 100
 
-    x = np.linspace(start, end, num_points)
+    x = np.linspace(start, end)
     y = slope * x
 
     fig, ax = plt.subplots()
@@ -51,8 +50,7 @@ def plot_linear_function():
 
 
 def graph(formula, start, end):
-    num_points = 100
-    x = np.linspace(start, end, num_points)
+    x = np.linspace(start, end)
     y = formula(x)
     plt.plot(x, y)
     plt.grid()
