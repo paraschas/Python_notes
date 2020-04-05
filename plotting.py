@@ -31,7 +31,11 @@ def plot_ticker():
 def plot_linear_function():
     slope = 0.5
 
-    x = np.arange(0, 10, 1)
+    start = 0
+    end = 10
+    step = (end - start) / 100
+
+    x = np.arange(start, end, step)
     y = slope * x
 
     fig, ax = plt.subplots()
@@ -46,19 +50,20 @@ def plot_linear_function():
 
 
 def graph(formula, start, end):
-    x_values = np.arange(start, end, (end - start) / 100)
-    x = np.array(x_values)
+    step = (end - start) / 100
+    x = np.arange(start, end, step)
     y = formula(x)
     plt.plot(x, y)
+    plt.grid()
     plt.show()
 
 
 def plot_any_function():
     def function_formula(x):
-        return -x + 0.5
+        return x ** 2 - 3 * x + 5
 
-    start = -4
-    end = 4
+    start = -2
+    end = 5
 
     graph(function_formula, start, end)
 
