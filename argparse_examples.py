@@ -25,7 +25,9 @@ def main():
     main function
     """
     argument_parser = argparse.ArgumentParser()
-    argument_parser.add_argument("--exit", action="store_true", help="immediately stop execution")
+    argument_parser.add_argument(
+        "--exit", action="store_true", help="immediately stop execution"
+    )
     argument_parser.add_argument("message", nargs="+", help="message to echo")
 
     args = argument_parser.parse_args()
