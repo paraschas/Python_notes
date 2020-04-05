@@ -25,6 +25,7 @@ def plot_ticker():
 
     data["High"].plot()
     plt.legend()
+
     plt.show()
 
 
@@ -33,14 +34,14 @@ def plot_linear_function():
 
     start = 0
     end = 10
-    step = (end - start) / 100
+    num_points = 100
 
-    x = np.arange(start, end, step)
+    x = np.linspace(start, end, num_points)
     y = slope * x
 
     fig, ax = plt.subplots()
-    ax.plot(x, y)
 
+    ax.plot(x, y)
     ax.set(
         xlabel="x", ylabel="y", title="linear function",
     )
@@ -50,8 +51,8 @@ def plot_linear_function():
 
 
 def graph(formula, start, end):
-    step = (end - start) / 100
-    x = np.arange(start, end, step)
+    num_points = 100
+    x = np.linspace(start, end, num_points)
     y = formula(x)
     plt.plot(x, y)
     plt.grid()
